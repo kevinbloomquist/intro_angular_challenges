@@ -9,24 +9,27 @@ function WelcomeController(){
   this.age = 38;
   this.city = "Baltimore";
   this.state = "MD";
-  this.shout = function($scope){
-  	var word = $scope.toUpperCase;
+
+  // couldn't get either apporach to work
+  this.shout = function(this){
+  	var word = this.toUpperCase;
   	return word +"!";
-  };
+  }
+};
   
   // app.filter('shout',function(input){
   // 	input = input||'';
   // 	var shouted = input.toUppercase;
   // 	return shouted +"!";
   // });
-  };
+  
 
 function exerciseController(){
 	this.class_name = "BNCOZO"
 	this.enrolled_students=10
 	this.start_date = "10/31/2016"
 	this.end_date = "02/03/17"
-	this.daysremaining = 
+	// this.daysremaining = 
 
-}
+};
 
